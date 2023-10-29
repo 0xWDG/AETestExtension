@@ -34,30 +34,30 @@ public class TestExtension: ExtensionInterface {
             if let api = parameters["callback"] as? AuroraAPI {
                 AuroraAPI = api
             }
+//
+//            for i in 0...9 {
+//                DispatchQueue.main.asyncAfter(deadline: .now() + Double(i)) {
+//
+//                    if i == 5 {
+//                        self.AuroraAPI(
+//                            "showWarning",
+//                            ["message": "a wild warning encountered!"]
+//                        )
+//                    }
+//
+//                    print("Waiting for \(10 - i) seconds...")
+//
+//                    self.AuroraAPI(
+//                        "showNotification",
+//                        [
+//                            "title":"showNotification",
+//                            "message": "Waiting for \(10 - i) seconds..."
+//                        ]
+//                    )
+//                }
+//            }
 
-            for i in 0...9 {
-                DispatchQueue.main.asyncAfter(deadline: .now() + Double(i)) {
-
-                    if i == 5 {
-                        self.AuroraAPI(
-                            "showWarning",
-                            ["message": "a wild warning encountered!"]
-                        )
-                    }
-
-                    print("Waiting for \(10 - i) seconds...")
-
-                    self.AuroraAPI(
-                        "showNotification",
-                        [
-                            "title":"showNotification",
-                            "message": "Waiting for \(10 - i) seconds..."
-                        ]
-                    )
-                }
-            }
-
-            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
 //                self.AuroraAPI(
 //                    "openWindow", // Uses default size 500x500
 //                    ["view": myWindow()]
