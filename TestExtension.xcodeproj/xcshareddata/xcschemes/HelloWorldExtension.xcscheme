@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0463E4FE27F7492100806D5C"
-               BuildableName = "HelloWorldExtension.AEext"
-               BlueprintName = "HelloWorldExtension"
-               ReferencedContainer = "container:HelloWorldExtension.xcodeproj">
+               BuildableName = "TestExtension.AEext"
+               BlueprintName = "TestExtension"
+               ReferencedContainer = "container:TestExtension.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -51,9 +51,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0463E4FE27F7492100806D5C"
-            BuildableName = "HelloWorldExtension.AEext"
-            BlueprintName = "HelloWorldExtension"
-            ReferencedContainer = "container:HelloWorldExtension.xcodeproj">
+            BuildableName = "TestExtension.AEext"
+            BlueprintName = "TestExtension"
+            ReferencedContainer = "container:TestExtension.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
