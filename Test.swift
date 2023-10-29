@@ -59,13 +59,21 @@ public class TestExtension: ExtensionInterface {
 
             DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
 //                self.AuroraAPI(
-//                    "openWindow",
+//                    "openWindow", // Uses default size 500x500
 //                    ["view": myWindow()]
 //                )
                 self.AuroraAPI(
-                    "openSettings",
-                    [:]
+                    "openSheet", // Fails to size.
+                    ["view": myWindow()]
                 )
+//                self.AuroraAPI(
+//                    "openTab", // Not done.
+//                    ["view": myWindow()]
+//                )
+//                self.AuroraAPI(
+//                    "openSettings",
+//                    [:]
+//                )
                 self.AuroraAPI(
                     "showError",
                     ["message": "Ok, settings should be opened right now?"]
